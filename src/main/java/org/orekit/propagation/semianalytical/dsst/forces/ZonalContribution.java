@@ -1083,8 +1083,8 @@ class ZonalContribution implements DSSTForceModel {
             double mbtj = 1;
 
             for (int j = 1; j <= jMax; j++) {
-                double rho;
-                double sigma;
+                final double rho;
+                final double sigma;
 
                 //Compute current rho and sigma;
                 mbtj *= -b;
