@@ -922,7 +922,7 @@ public class DSSTPropagator extends AbstractIntegratedPropagator {
                 interpolator.setInterpolatedTime(time);
 
                 // Build the corresponding state
-                SpacecraftState state;
+                final SpacecraftState state;
                 try {
                     state = mapper.mapArrayToState(time,
                             interpolator.getInterpolatedState(), true);
